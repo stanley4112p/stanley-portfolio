@@ -1,0 +1,250 @@
+**index.html**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stanley Maina Gatuni</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-section">
+            <img src="me.jpg" alt="Stanley's Photo" class="profile-pic">
+        </div>
+        <div class="info-section">
+            <h1>I'm <span class="highlight">Stanley Maina Gatuni</span></h1>
+            <h2>About me</h2>
+            <p>My name is Stanley Maina Gatuni, and I’m someone who believes that hard work, talent, and heart can shape not just a career — but a life worth living. I may be known as a technician, but before anything else, I’m a builder of dreams, a quiet thinker, and someone who deeply values where I come from and where I’m going.</p>
+
+            <p>I’m passionate about solving problems, learning new things, and turning ideas into something real. But beyond all that, I believe in purpose. I believe in showing up — not just for work, but for the people who matter most. My family is my foundation, and every decision I make is guided by the desire to give them a better future, and to become the kind of person they can always be proud of.</p>
+
+            <p>I don’t just want to be successful — I want to be significant. I want to grow, build, explore, and keep proving that there’s more to me than what people see at first glance. This space is a reflection of who I am: a mix of passion, ambition, loyalty, and quiet strength. I’m still becoming the person I’m meant to be — and I’m glad you’re here for a piece of that journey.</p>
+
+            <a href="#gallery" class="button">See My Photos</a>
+            <div class="contact">
+                <a href="tel:+254700628564">📞 0700628564</a>
+                <a href="mailto:gatunistanley@gmail.com">✉️ gatunistanley@gmail.com</a>
+                <a href="https://www.instagram.com/stanley._niccur/" target="_blank">📸 Instagram</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="quote" class="quote">
+        <blockquote>“Stay humble. Stay curious. Keep building.”</blockquote>
+    </div>
+
+    <div id="gallery" class="gallery">
+        <h2>My Gallery</h2>
+        <div class="gallery-grid">
+            <img src="me.jpg" alt="Stanley 1">
+            <img src="IMG_4837.JPG" alt="Stanley 2">
+            <img src="IMG_5585.JPG" alt="Stanley 3">
+        </div>
+    </div>
+
+    <div class="video-section">
+        <h2>Behind the Scenes</h2>
+        <video controls>
+            <source src="your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="testimonials">
+        <h2>What People Say</h2>
+        <div class="testimonial">
+            <p>“Stanley is one of the most reliable and talented technicians I've ever worked with. His work ethic is unmatched.”</p>
+            <strong>— James, Client</strong>
+        </div>
+        <div class="testimonial">
+            <p>“A kind heart, a sharp mind, and hands that build more than just machines — they build dreams.”</p>
+            <strong>— Sarah, Family</strong>
+        </div>
+    </div>
+</body>
+</html>
+```
+
+**style.css**
+```css
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0b0c10;
+    color: #f0f0f0;
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.profile-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic {
+    max-width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px #00c9b7;
+    transition: transform 0.3s;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+}
+
+.info-section {
+    flex: 2;
+    padding: 40px;
+}
+
+.highlight {
+    color: #00c9b7;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0 0 10px;
+}
+
+h2 {
+    color: #aaa;
+    margin: 0 0 20px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #00c9b7;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #00a99d;
+}
+
+.contact {
+    margin-top: 30px;
+}
+
+.contact a {
+    display: block;
+    margin: 5px 0;
+    color: #00c9b7;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact a:hover {
+    color: #00ffff;
+}
+
+.gallery {
+    padding: 60px 20px;
+    background: #101214;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #00c9b7;
+}
+
+.gallery-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-grid img {
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 201, 183, 0.5);
+    transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+.quote {
+    background: #0f1113;
+    padding: 40px;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.5em;
+    color: #00c9b7;
+    border-top: 1px solid #1a1c1e;
+    border-bottom: 1px solid #1a1c1e;
+    margin: 40px 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.video-section {
+    padding: 60px 20px;
+    background: #0f1113;
+    text-align: center;
+}
+
+.video-section h2 {
+    color: #00c9b7;
+    margin-bottom: 20px;
+}
+
+.video-section video {
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 201, 183, 0.5);
+}
+
+.testimonials {
+    padding: 60px 20px;
+    background: #101214;
+    text-align: center;
+}
+
+.testimonials h2 {
+    color: #00c9b7;
+    margin-bottom: 30px;
+}
+
+.testimonial {
+    max-width: 600px;
+    margin: 20px auto;
+    font-style: italic;
+    color: #ccc;
+}
+
+.testimonial strong {
+    display: block;
+    margin-top: 10px;
+    color: #00c9b7;
+}
+```
